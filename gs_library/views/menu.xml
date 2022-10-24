@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <menuitem id="gs_lib_main_menu"
+            web_icon="gs_lib,static/description/icon.png"
+            name="Library" sequence="300"/>
+
+  <menuitem id="gs_lib_catalog_menu"
+            parent="gs_lib_main_menu"
+            name="Catalog" sequence="100"/>
+
+  <menuitem id="gs_lib_settings_main_menu"
+            parent="gs_lib_main_menu"
+            groups="group_gs_lib_manager,group_gs_lib_admin"
+            name="Settings" sequence="9999"/>
+
+</odoo>
