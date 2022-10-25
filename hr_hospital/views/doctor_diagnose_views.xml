@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <record id="doctor_diagnose_tree" model="ir.ui.view">
+    <field name="name">doctor.diagnose.tree()</field>
+    <field name="model">doctor.diagnose</field>
+    <field name="arch" type="xml">
+      <tree>
+          <field name="diagnose_date"/>
+          <field name="doctor_diagnose"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="doctor_diagnose_form" model="ir.ui.view">
+    <field name="name">doctor.diagnose.form()</field>
+    <field name="model">doctor.diagnose</field>
+    <field name="arch" type="xml">
+      <form>
+        <header></header>
+        <sheet>
+          <group>
+            <field name="diagnose_date"/>
+            <field name="doctor_diagnose"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="action_doctor_diagnose" model="ir.actions.act_window">
+    <field name="name">Diagnose</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">doctor.diagnose</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="menu_doctor_diagnose" model="ir.ui.menu">
+    <field name="name">Diagnose</field>
+    <field name="parent_id" ref="menu_hospital_additional"/>
+    <field name="action" ref="action_doctor_diagnose"/>
+    <field name="sequence" eval="0"/>
+  </record>
+</odoo>

@@ -2,7 +2,7 @@
     'name': 'hr_hospital',
     'summary': '',
 
-    'author': 'GarantService',
+    'author': 'GarantService/',
     'website': 'https://gs.com.ua',
 
     'category': 'Customizations',
@@ -16,7 +16,11 @@
 
     'data': [
         'security/ir.model.access.csv',
+        'views/hospital_menus.xml',
         'views/hospital_patient_views.xml',
+        'views/hospital_doctor_views.xml',
+        'views/patient_card_views.xml',
+        'views/doctor_diagnose_views.xml',
     ],
     'demo': [
     ],
@@ -25,8 +29,8 @@
     'auto_install': False,
 
     'images': [
-        'statis/description/cover.png',
-        'statis/description/icon.png',
+        'static/description/cover.png',
+        'static/description/icon.png',
     ],
 
     'price': 0,

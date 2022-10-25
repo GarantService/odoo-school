@@ -17,19 +17,29 @@
     <field name="model">hospital.patient</field>
     <field name="arch" type="xml">
       <form>
+        <header></header>
         <sheet>
-          <field name="first_name"/>
-          <field name="last_name"/>
-          <field name="birth_date"/>
+          <group>
+            <field name="first_name"/>
+            <field name="last_name"/>
+            <field name="birth_date"/>
+          </group>
         </sheet>
       </form>
     </field>
   </record>
 
-  <record id="hospital_patient_act_window" model="ir.actions.act_window">
-    <field name="name">Patient</field>
+  <record id="action_hospital_patient" model="ir.actions.act_window">
+    <field name="name">Patients</field>
     <field name="type">ir.actions.act_window</field>
     <field name="res_model">hospital.patient</field>
     <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="menu_hospital_patient" model="ir.ui.menu">
+    <field name="name">Patients</field>
+    <field name="parent_id" ref="menu_hospital_main"/>
+    <field name="action" ref="action_hospital_patient"/>
+    <field name="sequence" eval="10"/>
   </record>
 </odoo>

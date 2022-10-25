@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="menu_hospital_main" model="ir.ui.menu">
+        <field name="name">Hospital</field>
+        <field name="web_icon">hr_hospital,static/description/icon.png</field>
+        <field name="sequence" eval="1"/>
+    </record>
+
+    <record id="menu_hospital_additional" model="ir.ui.menu">
+        <field name="name">Additional</field>
+        <field name="parent_id" ref="menu_hospital_main"/>
+        <field name="sequence" eval="40"/>
+    </record>
+</odoo>
