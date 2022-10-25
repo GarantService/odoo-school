@@ -11,4 +11,4 @@
         <field name="parent_id" ref="menu_hospital_main"/>
         <field name="sequence" eval="40"/>
     </record>
-</odoo>
+</odoo>  <!--views/hospital_menus.xml:1: [W7908(missing-newline-extrafiles), ]  Missing newline-->

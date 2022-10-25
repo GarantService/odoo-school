@@ -15,15 +15,6 @@ class HospitalPatient(models.Model):
     active = fields.Boolean(
         default=True, )
 
-class HospitalDoctor(models.Model):
-    _name = 'hospital.doctor'
-    _description = 'Doctors'
-
-    doctor_speciality = fields.Char()
-    first_name = fields.Char()
-    last_name = fields.Char()
-    active = fields.Boolean(
-        default=True, )
 
 class PatientCard(models.Model):
     _name = 'patient.card'
@@ -34,6 +25,7 @@ class PatientCard(models.Model):
     visit_prescription = fields.Char()
     active = fields.Boolean(
         default=True, )
+
 
 class DoctorDiagnose(models.Model):
     _name = 'doctor.diagnose'

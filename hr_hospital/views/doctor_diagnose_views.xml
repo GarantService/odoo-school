@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-  <record id="doctor_diagnose_tree" model="ir.ui.view">
+  <record id="doctor_diagnose_view_tree" model="ir.ui.view">
     <field name="name">doctor.diagnose.tree()</field>
     <field name="model">doctor.diagnose</field>
     <field name="arch" type="xml">
@@ -11,7 +11,7 @@
     </field>
   </record>
 
-  <record id="doctor_diagnose_form" model="ir.ui.view">
+  <record id="doctor_diagnose_view_form" model="ir.ui.view">
     <field name="name">doctor.diagnose.form()</field>
     <field name="model">doctor.diagnose</field>
     <field name="arch" type="xml">
@@ -40,4 +40,4 @@
     <field name="action" ref="action_doctor_diagnose"/>
     <field name="sequence" eval="0"/>
   </record>
-</odoo>
+</odoo>  <!-- Потрібно залишати один порожній рядок у кінці всіх файлів. -->

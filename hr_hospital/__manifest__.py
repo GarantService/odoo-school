@@ -1,6 +1,6 @@
 {
     'name': 'hr_hospital',
-    'summary': '',
+    'summary': 'Module description',  # Короткий опис для чого цей модуль
 
     'author': 'GarantService/',
     'website': 'https://gs.com.ua',
@@ -10,6 +10,7 @@
     'version': '15.0.1.0.0',
 
     'depends': [
+        'base',  # Якщо модуль, не має прямих залежностей, він повінен мати залежність від базового модуля "base".
     ],
 
     'external_dependencies': {'python': [], },
